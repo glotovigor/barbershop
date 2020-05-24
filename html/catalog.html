@@ -34,67 +34,53 @@
         <ul>
             <li><a href="index.html">Главная</a></li>
             <li><a href="shop.html">Магазин</a></li>
-            <li><a href="index.html">Главная</a></li>
-            <li>Главная</li>
+            <li>Средства для ухода</li>
         </ul>
 
         <section>
             <h2>Фильтрация товаров</h2>
 
-            <section>
-                <h3>Производители:</h3>
-                <ul>
-                    <li>
-                        <input type="checkbox" name="manufacturer-1" id="manufacturer">
-                        <label for="manufacturer">Производитель1</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="manufacturer-2" id="manufacturer">
-                        <label for="manufacturer">Производитель2</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="manufacturer-3" id="manufacturer">
-                        <label for="manufacturer">Производитель3</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="manufacturer-4" id="manufacturer">
-                        <label for="manufacturer">Производитель4</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="manufacturer-5" id="manufacturer">
-                        <label for="manufacturer">Производитель5</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="manufacturer-6" id="manufacturer">
-                        <label for="manufacturer">Производитель6</label>
-                    </li>
-                </ul>
-            </section>
+            <form action="catalog.index" method="get">
+                <fieldset>
+                    <legend>Производители:</legend>
 
-            <section>
-                <h3>Группы товаров:</h3>
-                <ul>
-                    <li>
-                        <input type="radio" name="product groups" id="product groups" value="group-1">
-                        <label for="product groups">Бритвенные принадлежности</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="product groups" id="product groups" value="group-2">
-                        <label for="product groups">Средства для бритья</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="product groups" id="product groups" value="group-3">
-                        <label for="product groups">Аксессуары</label>
-                    </li> 
-                </ul>
-            </section>
+                    <input type="checkbox" name="manufacturer-1" id="manufacturer-1">
+                    <label for="anufacturer-1">Производитель1</label>
 
-            <button type="button">Показать</button>
+                    <input type="checkbox" name="manufacturer-2" id="manufacturer-2">
+                    <label for="manufacturer-2">Производитель2</label>
+
+                    <input type="checkbox" name="manufacturer-3" id="manufacturer-3">
+                    <label for="manufacturer-3">Производитель3</label>
+
+                    <input type="checkbox" name="manufacturer-4" id="manufacturer-4">
+                    <label for="manufacturer-4">Производитель4</label>
+
+                    <input type="checkbox" name="manufacturer-5" id="manufacturer-5">
+                    <label for="manufacturer-5">Производитель5</label>
+
+                    <input type="checkbox" name="manufacturer-6" id="manufacturer-6">
+                    <label for="manufacturer-6">Производитель6</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Группы товаров:</legend>
+                    <input type="radio" name="product-groups" id="product-groups1" value="product-groups1">
+                    <label for="roduct-groups1">Бритвенные принадлежности</label>
+
+                    <input type="radio" name="product-groups" id="product-groups2" value="product-groups2">
+                    <label for="roduct-groups2">Средства для бритья</label>
+
+                    <input type="radio" name="product-groups" id="product-groups3" value="product-groups3">
+                    <label for="roduct-groups3">Аксессуары</label>
+                </fieldset>
+                <input type="submit" value="Показатьаа">
+            </form>
         </section>
 
         <section>
             <ul>
-
+                
                 <li>
                     <article>
                         <a href="#">
@@ -203,7 +189,7 @@
         <p>Разработано:</p>
         <a href="https://htmlacademy.ru">HTML Academy</a>
     </footer>
-    
+
 </body>
 
 </html>
