@@ -1,12 +1,20 @@
-html,
 body {
     margin: 0;
     padding: 0;
+
     font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+
     background-color: black;
-    color: tomato;
+    background-image: url("../images/index-background.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;   
 }
 
-p {
-    font-size: 26px;
+a {
+   text-decoration: none; 
 }
