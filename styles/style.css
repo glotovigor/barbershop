@@ -684,7 +684,7 @@ input[type="radio"].visually-hidden {
 }
 
 .price {
-    width: 70px;
+    min-width: 70px;
     text-align: center;
     padding: 10px 20px;
 
@@ -754,3 +754,169 @@ input[type="radio"].visually-hidden {
 
     transform: rotate(45deg);
 }*/
+
+
+/*Стили для каталога*/
+
+.catalog-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-container {
+    width: 208px;
+}
+
+.product-list {
+    width: 700px;
+}
+
+.product-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-card {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 220px;
+    background-color: #ffffff;
+    
+    box-shadow: 0 0 15px rgba(0,1,1,0.2);
+}
+
+.product-card .image-block {
+    width: 100%;
+    height: 165px;
+    margin-bottom: 12px;
+}
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.product-card .product-title {
+    text-transform: none;
+    margin-bottom: 13px;
+    font-size: 14px;
+    line-height: 18px;
+    color: black;
+}
+
+.product-card .product-checkout{
+    display: flex;
+}
+
+.product-card .product-checkout .price {
+    font-size: 14px;
+    line-height: 24px;
+
+    background-color: #E5E5E5;
+}
+
+.product-card .product-checkout .button {
+    margin-right: 0;
+    width: 78px;
+    padding: 0;
+}
+
+.filter-type-title {
+    display: block;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.option {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.check {
+    
+    padding-left: 43px;
+
+}
+
+.check-input {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.check-box {
+    position: absolute;
+    margin-left: -42px;
+    width: 20px;
+    height: 20px;
+    background-color: #F9F6F3;
+    box-shadow: inset 0 0 0 2px #000000;
+}
+
+.check-input:checked + .check-box {
+    background-image: url("../images/icons/cross-small.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.radio {
+    padding-left: 43px;
+}
+
+.radio-input {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.radio-button {
+    position: absolute;
+    margin-left: -44px;
+    width: 22px;
+    height: 22px;
+    border-radius: 100px;
+    background-color: #F9F6F3;
+    box-shadow: inset 0 0 0 2px #000000;
+}
+
+.filter-item-label {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.radio-input:checked + .radio-button {
+    background-image: url("../images/icons/shape.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.paginator {
+    display: flex;
+    margin-top: 45px;
+}
+
+.paginator a {
+    
+    padding: 10px 19px;
+    margin-right: 6px;
+}
+
